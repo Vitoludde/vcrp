@@ -1,7 +1,7 @@
-from vcrp import mywrite
-from vcrp import myread
-from vcrp import myencrypt
-from vcrp import mydecrypt
+from src import mywrite
+from src import myread
+from src import myencrypt
+from src import mydecrypt
 
 while True:
 	prompt = input("1 - write, 2 - read, 3 - encrypt, 4 - decrypt, 5 - quit: ")
