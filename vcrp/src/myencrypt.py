@@ -1,5 +1,9 @@
+import os
+
 def mainencrypt():
-	fin = open("./data.fcnf", "rt")
+	os.system("clear")
+
+	fin = open("./data.vcrp", "rt")
 	data = fin.read()
 	data = data.replace('a', '634 ')
 	data = data.replace('A', '_634 ')
@@ -61,6 +65,6 @@ def mainencrypt():
 	data = data.replace('Ö', '_8576 ')
 	fin.close()
 
-	fin = open("./data.fcnf", "wt")
+	fin = open("./data.vcrp", "wt")
 	fin.write(data)
 	fin.close()

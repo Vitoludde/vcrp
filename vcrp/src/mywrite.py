@@ -1,16 +1,16 @@
-def mainwrite():
-	try:
-		configfile = open("./data.fcnf","w")
-	except Exception as e:
-		configfile = open("./data.fcnf","w")
+import os
 
-	def writeline(one, two):
-		configfile.write(one + ": " + two + "\n")
+def mainwrite():
+	os.system("clear")
+	print("Write _quit_ to return")
+
+	configfile = open("./data.vcrp","w")
+
+	def writeline(textt):
+		configfile.write(textt + "\n")
 	while True:
-		one = input("First: ")
-		if one == "quit":
+		text = input("")
+		if text == "_quit_":
 			configfile.close()
 			break
-		two = input("Second: ")
-		writeline(one, two)
-		print("Writing to config")
+		writeline(text)
