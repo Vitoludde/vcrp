@@ -2,7 +2,7 @@ import os
 
 def mainwrite():
 	os.system("clear")
-	print("Write _quit_ to return")
+	print("Write -quit to return")
 
 	configfile = open("./data.vcrp","w")
 
@@ -10,7 +10,7 @@ def mainwrite():
 		configfile.write(textt + "\n")
 	while True:
 		text = input("")
-		if text == "_quit_":
+		if text == "-quit":
 			configfile.close()
 			break
 		writeline(text)
