@@ -1,9 +1,9 @@
-from src import mywrite
-from src import myread
-from src import myencrypt
-from src import mydecrypt
+from src import mywrite, myread, myencrypt, mydecrypt
+import os
 
 while True:
+	os.system("clear")
+
 	prompt = input("1 - write, 2 - read, 3 - encrypt, 4 - decrypt, 5 - quit: ")
 	if prompt == "1":
 		mywrite.mainwrite()
